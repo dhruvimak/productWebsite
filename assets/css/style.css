@@ -1,0 +1,66 @@
+
+#screenshot{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/*---------------------------------------
+    Screenshot section                       border radius , effects of the gallery photos  / size photos         
+-----------------------------------------*/
+
+.item .col-md-3 {
+  display: block;
+  width: 100%;
+  padding-bottom: 1rem;  
+}
+
+.item img { /*mooving of the fotos*/
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px #25605B;
+  /*  border-radius: 5px;  */
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 0px;
+  transition: all 0.4s ease-in-out;
+  
+}
+
+.item img:hover {   /*box shadow*/
+  box-shadow: 0px 16px 10px 0px rgba(0, 0, 0, 0.3);
+  top: -6px;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.mr-1 .owl-item.active{
+  margin-right: 2px !important;
+}
+
+.owl-carousel .owl-stage {
+  width: max-content !important;
+}
